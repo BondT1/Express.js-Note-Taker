@@ -30,4 +30,26 @@ notes.delete('/:note_id', (res, req) => {
         })
 }); 
 
+notes.post('/', (res, req) => {
+    console.log(req.body);
+
+    const { title, text } = req.body;
+
+    if (req.body) {
+        const newNote = {
+            title,
+            text,
+            id: uuidv4(),
+        };
+
+        readAndAppend(newNote, './db/db.json');
+        res.json('Note succesfully added');
+    } else {
+        res.errored('Error occured when adding note');
+    }
+    
+});
+
+module.exports = notes;
+
 
