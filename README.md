@@ -1,4 +1,4 @@
-# Fully Functional Weather Dashboard
+# Express.js Note Taker
 
 ## Description
 
