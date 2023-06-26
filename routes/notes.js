@@ -8,7 +8,7 @@ notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-notes.get('/:note_id', (res, req) => {
+notes.get('/:note_id', (req, res) => {
     const noteId = req.params.note_id;
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
@@ -20,7 +20,7 @@ notes.get('/:note_id', (res, req) => {
         });
 });
 
-notes.delete('/:note_id', (res, req) => {
+notes.delete('/:note_id', (req, res) => {
     const noteId = req.params.note_id;
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
@@ -31,8 +31,8 @@ notes.delete('/:note_id', (res, req) => {
         })
 }); 
 
-notes.post('/', (res, req) => {
-    console.log(req.body);
+notes.post('/', (req, res) => {
+    console.log(req);
 
     const { title, text } = req.body;
 
