@@ -2,7 +2,7 @@
 
 ## Description
 
-The aim of this project was to create a fully functionla note taker using Express.js, which allows the user to create new notes, save them to a sidebar, and delete them. The application was deployed with Heroku and contains an introductory page and the main note taker page. The main task was to create the back-end code for the application, creating a simple API and linking this to the front-end code already present.
+The aim of this project was to create a fully functional note taker using Express.js, which allows the user to create new notes, save them to a sidebar, and delete them. The application was deployed with Heroku and contains an introductory page and the main note taker page. The main task was to create the back-end code for the application, creating a simple API and linking this to the front-end code already present.
 
 The features used to create this project consist of:
 
